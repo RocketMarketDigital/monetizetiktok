@@ -1,0 +1,96 @@
+/* Reset e básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Vídeo */
+.intro-video {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: transform 0.5s ease;
+}
+
+.intro-video:hover {
+    transform: scale(1.02);
+}
+
+/* Botão CTA animado */
+.cta-button {
+    display: inline-block;
+    padding: 18px 40px;
+    background: linear-gradient(45deg, #ff004c, #ff3366);
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(255,0,76,0.3);
+    margin-bottom: 50px;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255,0,76,0.5);
+}
+
+/* Descrição */
+.description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease;
+}
+
+/* Benefícios */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease;
+}
+
+.benefit h3 {
+    color: #ff004c;
+    margin-bottom: 12px;
+}
+
+/* Animação ao entrar na tela */
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
