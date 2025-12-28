@@ -94,22 +94,3 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
-.hero-image {
-  width: 100%;
-  max-width: 900px;
-  display: block;
-  margin: 0 auto 30px;
-  border-radius: 16px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-
-/* Ajuste para celular */
-@media (max-width: 768px) {
-  .hero-image {
-    max-width: 100%;
-    margin-bottom: 20px;
-    border-radius: 12px;
-  }
-}
-
