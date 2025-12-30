@@ -14,6 +14,3 @@ const observer = new IntersectionObserver(entries => {
 animatedElements.forEach(el => {
     observer.observe(el);
 });
-
-const iframe = document.querySelector('iframe');
-iframe.contentWindow.postMessage({ method: 'setVolume', value: 1 }, '*');
